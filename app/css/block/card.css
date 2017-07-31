@@ -1,3 +1,15 @@
+[data-color="first"]{
+  background-color: #45AAEE;  /*Azul*/
+}
+[data-color="second"]{
+  background-color: #FF1010;  /*Vermelho*/
+}
+[data-color="third"]{
+  background-color: #76EF40;  /*Verde*/
+}
+[data-color="fourth"]{
+  background-color: #EBEf40;  /*Amarelo*/
+}
 .card
 {
   display: inline-block;
@@ -6,30 +18,12 @@
   width: 25%;
   position: relative;
 }
-.card_colorFirst
-{
-  background-color: #45AAEE;  /*Azul*/
-}
-.card_colorSecond
-{
-  background-color: #FF1010;  /*Vermelho*/
-}
-.card_colorThird
-{
-  background-color: #76EF40;  /*Verde*/
-}
-.card_colorFourth
-{
-  background-color: #EBEf40;  /*Amarelo*/
-}
-.wrap-card-colors
-{
+.wrap-card-colors{
   position: absolute;
   top: -16px;
   left: 0px;
 }
-.card-colors
-{
+.card-colors{
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -37,20 +31,4 @@
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.5);
-}
-.card-colors_colorFirst
-{
-  background-color: #45AAEE; /*Azul*/
-}
-.card-colors_colorSecond
-{
-  background-color: #FF1010; /*Vermelho*/
-}
-.card-colors_colorThird
-{
-  background-color: #76EF40;  /*Verde*/
-}
-.card-colors_colorFourth
-{
-  background-color: #EBEf40; /*Amarelo*/
 }
