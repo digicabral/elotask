@@ -18,17 +18,30 @@
   width: 25%;
   position: relative;
 }
-.wrap-card-colors{
+.wrap-card-options{
   position: absolute;
   top: -16px;
   left: 0px;
 }
-.card-colors{
+.card-options{
   display: inline-block;
+  box-sizing: border-box;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.card_delete{
+  background-color: #FFFF;
+  background-image: url(../../images/delete.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+.card-options.isActive
+{
+  padding: 2px;
+  border-width: 4px;
 }
