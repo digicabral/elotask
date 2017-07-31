@@ -9,6 +9,11 @@
   position: absolute;
   top: -16px;
   left: 0px;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+.card:hover .wrap-card-options{
+    opacity: 1;
 }
 .card-options{
   background-color: #FFFF;
@@ -32,7 +37,6 @@
 .card_edit{
   background-image: url(../../images/edit.png);
   background-size: 70%;
-
 }
 .card-content[contenteditable = "true"]{
   outline: 2px dashed rgba(0, 0, 0, 0.5);
