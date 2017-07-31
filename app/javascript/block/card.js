@@ -5,6 +5,7 @@ for (var index = 0; index < $cards.length; index++) {
     $cards[index].addEventListener('click', function(event){
       var $this = event.target;
       var $card = this;
+      var $cardContent = $card.querySelector('.card-content');
 
       if($this.dataset.color){
 
@@ -17,7 +18,20 @@ for (var index = 0; index < $cards.length; index++) {
     };
     if($this.classList.contains('card_delete')) {
         $card.remove();
-    }
+    };
+
+    if($this.classList.contains('card_edit')) {
+      if($cardContent.getAttribute('contentEditable') == 'false'){
+            $cardContent.setAttribute('contentEditable', 'true');
+            $cardContent.focus();
+            $this.classList.add('isActive');
+      }
+      else {
+            $cardContent.setAttribute('contentEditable', 'false');
+            $cardContent.blur();
+            $this.classList.remove('isActive');
+      };
+    };
 
     });
 };

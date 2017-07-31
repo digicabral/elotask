@@ -1,17 +1,4 @@
-[data-color="first"]{
-  background-color: #45AAEE;  /*Azul*/
-}
-[data-color="second"]{
-  background-color: #FF1010;  /*Vermelho*/
-}
-[data-color="third"]{
-  background-color: #76EF40;  /*Verde*/
-}
-[data-color="fourth"]{
-  background-color: #EBEf40;  /*Amarelo*/
-}
-.card
-{
+.card{
   display: inline-block;
   box-sizing: border-box;
   padding: 16px;
@@ -24,21 +11,43 @@
   left: 0px;
 }
 .card-options{
+  background-color: #FFFF;
   display: inline-block;
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 .card_delete{
-  background-color: #FFFF;
   background-image: url(../../images/delete.png);
-  background-repeat: no-repeat;
   background-size: 60%;
-  background-position: center;
+  margin-right: 15px;
+}
+.card_edit{
+  background-image: url(../../images/edit.png);
+  background-size: 70%;
+
+}
+.card-content[contenteditable = "true"]{
+  outline: 2px dashed rgba(0, 0, 0, 0.5);
+}
+[data-color="first"]{
+  background-color: #45AAEE;  /*Azul*/
+}
+[data-color="second"]{
+  background-color: #FF1010;  /*Vermelho*/
+}
+[data-color="third"]{
+  background-color: #76EF40;  /*Verde*/
+}
+[data-color="fourth"]{
+  background-color: #EBEf40;  /*Amarelo*/
 }
 .card-options.isActive
 {
