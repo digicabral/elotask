@@ -2,3 +2,8 @@
 {
   padding: 0 10%;
 }
+.error{
+  display: block;
+  color: #FF1010;
+  text-align: center;
+}

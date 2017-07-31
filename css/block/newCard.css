@@ -10,8 +10,15 @@ margin-bottom: 40px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   padding: 10px;
+  border: 1px solid #fff;
+  transition: height 0.2s linear,
+              border 0.4s linear;
+}
+.newCard-content:focus
+{
+  height: 150px;
+  border: 1px solid #555
 }
 .newCard-action{
     display: block;
@@ -21,4 +28,6 @@ margin-bottom: 40px;
     background-color: #8272C7;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    cursor: pointer;
 }

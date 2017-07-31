@@ -1,10 +1,10 @@
-var $cards = document.querySelectorAll('.card');
+var $wrapCard = document.querySelector('.wrap-card');
 var $cardColors = document.querySelectorAll('.card-options');
 
-for (var index = 0; index < $cards.length; index++) {
-    $cards[index].addEventListener('click', function(event){
+
+    $wrapCard.addEventListener('click', function(event){
       var $this = event.target;
-      var $card = this;
+      var $card = $this.parentNode.parentNode.parentNode;
       var $cardContent = $card.querySelector('.card-content');
 
       if($this.dataset.color){
@@ -34,4 +34,3 @@ for (var index = 0; index < $cards.length; index++) {
     };
 
     });
-};
